@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
                     TextView winnerMessage = (TextView) findViewById(R.id.winnerMessage);
                     if(gameSate[winningPosition[0]]==0)
                     {
-                        winnerMessage.setText("Player 0 has won!");
+                        winnerMessage.setText("Player 1 has won!");
                     }
                     else if(gameSate[winningPosition[0]]==1)
                     {
-                        winnerMessage.setText("Player X has won!");
+                        winnerMessage.setText("Player 2 has won!");
                     }
                     LinearLayout layout = (LinearLayout) findViewById(R.id.winnerBox);
                     layout.setVisibility(View.VISIBLE);
