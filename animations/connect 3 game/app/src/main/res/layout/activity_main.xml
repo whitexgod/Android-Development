@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="388dp"
+            android:layout_height="412dp"
+            app:srcCompat="@drawable/board" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="5dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="132dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="132dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="132dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="262dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="262dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="130dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="262dp"
+            android:maxWidth="130dp"
+            android:maxHeight="144dp"
+            android:onClick="dropin"
+            android:padding="10dp"
+            android:tag="8" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/winnerBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#B0F49F36"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/winnerMessage"
+            android:layout_width="235dp"
+            android:layout_height="103dp"
+            android:background="#FFEB3B"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#F44336"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:onClick="playAgain"
+            android:text="Play Again"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
